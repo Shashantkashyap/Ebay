@@ -3,13 +3,16 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCxkTzhQ8XTwwCC7YAFvdDRGNKysKTZ4GA",
-    authDomain: "ebay-7fe7e.firebaseapp.com",
-    projectId: "ebay-7fe7e",
-    storageBucket: "ebay-7fe7e.appspot.com",
-    messagingSenderId: "936002054682",
-    appId: "1:936002054682:web:98010951ad271fdf95ffa3"
-  };
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+};
+
+console.log(import.meta.env.VITE_API_KEY); 
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
