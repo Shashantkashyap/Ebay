@@ -116,8 +116,8 @@ git push origin feature-branch
 
 5.	Open a pull request.
 
-License  
-This project is licensed under the MIT License. See the LICENSE file for more details.
+License     
+This project is licensed under the MIT License. See the LICENSE file for more details.   
 ________________________________________
 Additional Information
 Currently, two official plugins are available:
